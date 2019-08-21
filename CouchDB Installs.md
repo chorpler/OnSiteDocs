@@ -16,6 +16,11 @@ curl -X PUT --user ${USER}:${PASSWORD} http://127.0.0.1:5984/_replicator
 curl -X PUT --user ${USER}:${PASSWORD} http://127.0.0.1:5984/_global_changes
 ```
 
+## Symlink a nice `/etc/couchdb` direcotry:
+  ```bash
+  ln -s /couchdb/etc /etc/couchdb
+  ```
+
 ## To create CouchDB service
 - Put the following in `couchdb/etc/couchdb.service`:
   ```
